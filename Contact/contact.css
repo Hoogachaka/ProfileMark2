@@ -1,0 +1,183 @@
+html { 
+    background: url(/images/mountain.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.navBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    /* -webkit-animation: bar 2s forwards;
+    -webkit-animation-delay: .15s;
+    animation: slide 2s forwards;
+    animation-delay: .15s; */
+}
+
+
+/* added some animation here but I need Javascript to make it work */
+
+
+/* @-webkit-keyframes slide
+{
+  0% {
+    bottom: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slide
+{
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 93.5%;;
+  }
+} */
+
+
+
+.navButton {
+    background-color: black;
+    border: 1.5px solid rgb(154, 154, 154);
+    color: white;
+    font-family: Kanit;
+    font-size: 15px;
+    text-decoration: double;
+    transition: all .2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home {
+    columns: 0,1;
+}
+.resume {
+    columns: 1,2;
+}
+.about {
+    columns: 2,3;
+}
+.blog {
+    columns: 3,4;
+}
+.contact {
+    columns: 4,5;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    border: 3px solid black;
+    background: grey;
+    margin-top: 5%;
+}
+
+h2::selection,
+label::selection,
+button::selection {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrapper {
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  padding: 2rem;
+  background: #fff;
+  border: 2px solid grey;
+  box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.028), 0 0px 5.3px rgba(0, 0, 0, 0.04),
+    0 0px 10px rgba(0, 0, 0, 0.05), 0 0px 17.9px rgba(0, 0, 0, 0.06),
+    0 0px 33.4px rgba(0, 0, 0, 0.072), 0 0px 80px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  background: rgba(0, 0, 0, 0.671);
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  cursor: default;
+  color: white;
+  font-family: Kanit;
+}
+form,
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: initial;
+}
+.form-group label {
+  display: block;
+  margin: 2rem 0 0.5rem 0;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 1rem 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+  transition: border 0.15s;
+}
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  height: 4.6rem;
+}
+.form-group textarea {
+  resize: vertical;
+}
+.submit {
+  font-weight: bold;
+  font-family: Kanit;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  background: rgba(0, 0, 0, 0.671);
+  cursor: pointer;
+  transition: background 0.15s;
+  color: white;
+}
+i {
+  margin-right: 0.5rem;
+}
+.submit:hover {
+  background: rgba(0, 0, 0, 0.493);
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border: 1px solid #222;
+}
+
+@media screen and (min-width: 576px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 35%;
+  }
+}

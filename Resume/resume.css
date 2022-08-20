@@ -109,14 +109,18 @@ html {
     margin: 5%;
 }
 
+.titleBox {
+    text-align: center;
+}
+
 .title {
     border: 2px solid black;
-    margin: 0% 5% 0 2.5%;
     font-family: Kanit;
     font-size: 5vh;
     padding: 1% 4% 1% 4%;
     background-color: rgba(0, 0, 0, 0.671);
     color: white;
+    letter-spacing: 3px;
 }
 
 .paragraph {
@@ -125,4 +129,13 @@ html {
     font-family: Kanit;
     padding: 0 5% 0 5%;
     text-indent: 7%;
+}
+
+h1 {
+    text-indent: 5%;
+    font-size: 40px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.671);
+    margin: 0 5% 0 5%;
+    font-family: Kanit;
+    letter-spacing: 3px;
 }

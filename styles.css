@@ -110,8 +110,54 @@ html {
     columns: 4,5;
 }
 
-/* @Media (max-width: 20vw) {
-    body {
-    background-color: blue;
+@Media (max-width: 600px) {
+    html {
+        background: rgb(73, 73, 73);
     }
-} */
+    .nameAndTitle {
+        position: fixed;
+    }
+    .navBar {
+        position: relative;
+        top: 0;
+        display: grid;
+        grid-template-rows: 150px 150px 150px 150px 150px;
+        grid-template-columns: 100%;
+        grid-row-gap: 7.5%;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        -webkit-animation: none;
+        animation: none;
+    }
+    .navButton {
+        background-color: black;
+        border: 1.5px solid rgb(154, 154, 154);
+        color: white;
+        font-family: Kanit;
+        font-size: 15px;
+        text-decoration: double;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navButton:hover {
+        background-color: rgb(67, 67, 67);
+        transition: all .2s linear;
+    }
+    .home {
+        grid-row: 0,1;
+    }
+    .resume {
+        grid-row: 1,2;
+    }
+    .about {
+        grid-row: 2,3;
+    }
+    .blog {
+        grid-row: 3,4;
+    }
+    .contact {
+        grid-row: 4,5;
+    }
+}
