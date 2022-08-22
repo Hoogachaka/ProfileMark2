@@ -27,7 +27,7 @@ html {
     grid-template-columns: 20% 20% 20% 20% 20%;
     /* -webkit-animation: bar 2s forwards;
     -webkit-animation-delay: .15s;
-    animation: slide 2s forwards;
+    animation: bar 2s forwards;
     animation-delay: .15s; */
 }
 
@@ -35,7 +35,7 @@ html {
 
 /* added some animation here but I need Javascript to make it work */
 
-/* @-webkit-keyframes slide
+/* @-webkit-keyframes bar
 {
   0% {
     bottom: 0;
@@ -45,7 +45,7 @@ html {
   }
 }
 
-@keyframes slide
+@keyframes bar
 {
   0% {
     bottom: 0;
