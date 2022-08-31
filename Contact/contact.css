@@ -129,6 +129,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.2);
   outline: 0;
   transition: border 0.15s;
+  box-sizing: border-box;
 }
 .form-group input[type="text"],
 .form-group input[type="email"] {

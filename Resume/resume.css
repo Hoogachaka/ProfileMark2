@@ -139,3 +139,14 @@ h1 {
     font-family: Kanit;
     letter-spacing: 3px;
 }
+
+.jobPic {
+  max-height: 240px;
+  max-width: 320px;
+  border: 3px solid black;
+}
+
+.jobBox {
+  display: inline-flex;
+  padding: 5%;
+}

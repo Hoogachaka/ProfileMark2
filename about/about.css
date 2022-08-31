@@ -99,6 +99,7 @@ html {
     border: 2px solid grey;
     padding-top: 2.5%;
     display: flexbox;
+    position: absolute;
 }
 
 #profilePic {
@@ -111,12 +112,12 @@ html {
 
 .title {
     border: 2px solid black;
-    margin: 0% 5% 0 2.5%;
     font-family: Kanit;
     font-size: 5vh;
     padding: 1% 4% 1% 4%;
     background-color: rgba(0, 0, 0, 0.671);
     color: white;
+    margin: 0 auto 0 auto;
 }
 
 .paragraph {
